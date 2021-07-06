@@ -25,11 +25,25 @@
         android:background="#fff"
         android:src="@drawable/yoovis"
     <EditText
+        android:id="@+id/txName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Nama"
+        android:inputType="textPersonName"/>
+    <EditText
         android:id="@+id/txUsernameReg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:hint="Username"
+        android:inputType="textPersonName"/>
+    <EditText
+        android:id="@+id/txEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
         android:inputType="textPersonName"/>
     <EditText
         android:id="@+id/txPasswordReg"
