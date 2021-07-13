@@ -85,44 +85,15 @@
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
+            <EditText
+                android:id="@+id/etMerkSmartphone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionNext" />
+
 
 
         </LinearLayout>
-
-        <CheckBox
-            android:id="@+id/xiaomi"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Xiaomi" />
-
-        <CheckBox
-            android:id="@+id/samsung"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Samsung" />
-
-        <CheckBox
-            android:id="@+id/oppo"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Oppo" />
-
-        <CheckBox
-            android:id="@+id/vivo"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Vivo" />
-
-        <CheckBox
-            android:id="@+id/lainnya"
-            android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="Lainnya" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -137,7 +108,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/etNamaBarang"
+                android:id="@+id/etTypeSmartphone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:imeOptions="actionNext" />
@@ -152,38 +123,106 @@
             <TextView
                 android:layout_width="126dp"
                 android:layout_height="wrap_content"
-                android:text="Harga                        :"
+                android:text="Kerusakan               :"
                 android:textColor="@android:color/black"
                 android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/etHarga"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="number" />
 
         </LinearLayout>
 
+        <CheckBox
+            android:id="@+id/matitotal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Mati Total" />
+
+        <CheckBox
+            android:id="@+id/bootloop"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Bootloop" />
+
+        <CheckBox
+            android:id="@+id/connectorerror"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Connector Error" />
+
+        <CheckBox
+            android:id="@+id/layarpecah"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="layar Pecah" />
+
+        <CheckBox
+            android:id="@+id/speakermati"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Speaker Mati" />
+
+        <CheckBox
+            android:id="@+id/lainnya"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Lainnya" />
+
         <LinearLayout
+            android:id="@+id/parent1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <TextView
-                android:layout_width="126dp"
-                android:layout_height="wrap_content"
-                android:text="Uang Bayar              :"
-                android:textColor="@android:color/black"
-                android:textStyle="bold" />
-
-            <EditText
-                android:id="@+id/etJmlUang"
+            <LinearLayout
+                android:id="@+id/parent2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:imeOptions="actionNext"
-                android:inputType="number" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
 
+                <Button
+                    android:id="@+id/btntanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="tanggal" />
+
+                <EditText
+                    android:id="@+id/txttanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="date" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/parent3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnwaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="waktu" />
+
+                <EditText
+                    android:id="@+id/txtwaktu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="time" />
+            </LinearLayout>
         </LinearLayout>
 
         <Button
@@ -194,110 +233,6 @@
             android:background="@drawable/bg_button"
             android:text="Proses"
             android:textColor="@android:color/white" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@color/colorPrimary" />
-
-        <TextView
-            android:id="@+id/tvNamaPembeli"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvNomorTelepon"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvAlamat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvHarga"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvUangBayar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvTotal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvKembalian"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvBonus"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/tvKeterangan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dp"
-            android:textColor="@android:color/black"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btnHapus"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button"
-                android:text="Hapus Data"
-                android:textColor="@android:color/white" />
-
-            <Button
-                android:id="@+id/btnKeluar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:layout_weight="1"
-                android:background="@drawable/bg_button"
-                android:text="Keluar"
-                android:textColor="@android:color/white" />
-
-        </LinearLayout>
 
     </LinearLayout>
 
