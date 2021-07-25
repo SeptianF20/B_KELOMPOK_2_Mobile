@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_servislaptop">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+        <TextView
+            android:id="@+id/tv_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:visibility="gone"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/kr_namakerusakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kerusakan"
+            android:layout_below="@+id/tv_id"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/kr_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:textSize="11sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/kr_namakerusakan"
+            android:maxLines="10"
+            />
+        <TextView
+            android:id="@+id/kr_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal"
+            android:textSize="11sp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/kr_keterangan"
+            android:maxLines="10"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

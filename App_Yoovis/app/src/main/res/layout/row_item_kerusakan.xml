@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_servishp">
+
+    <LinearLayout
+        android:layout_width="390dp"
+        android:layout_height="80dp"
+        tools:layout_editor_absoluteY="10dp"
+        tools:layout_editor_absoluteX="10dp"
+        android:background="#257EFF"
+        android:orientation="vertical"
+        android:layout_marginTop="16dp"
+        android:radius="10dp">
+
+        <TextView
+            android:id="@+id/kr_namakerusakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Kerusakan"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/kr_keterangan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="keterangan"
+            android:layout_marginLeft="10dp"
+            android:textSize="11sp"
+            android:maxLines="10"
+            app:layout_constraintTop_toBottomOf="@+id/kr_namakerusakan"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:id="@+id/kr_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nominal"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/kr_keterangan"
+            android:maxLines="10"
+            android:textColor="@color/white"
+            />
+
+        <TextView
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:textSize="11sp"
+            android:layout_below="@id/kr_harga"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

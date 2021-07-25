@@ -85,7 +85,7 @@ public class LoginActivity extends AppCompatActivity {
                     startActivity(new Intent(getBaseContext(), MainActivity.class));
                     finish();
 
-                    Toast.makeText(getBaseContext(),"pesan: "+msg+"Id: "+id+"Username: "+user+"Token: "+ token, Toast.LENGTH_LONG).show();
+//                    Toast.makeText(getBaseContext(),"pesan: "+msg+"Id: "+id+"Username: "+user+"Token: "+ token, Toast.LENGTH_LONG).show();
                 }else{
                     Toast.makeText(getBaseContext(),"Gagal login", Toast.LENGTH_LONG).show();
                 }

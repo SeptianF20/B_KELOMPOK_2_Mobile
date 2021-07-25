@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class card_servishp extends AppCompatActivity {
+public class card_servisprinter extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.row_item_kerusakan);
+        setContentView(R.layout.activity_card_servisprinter);
     }
 }

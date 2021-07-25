@@ -12,10 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.App_Yoovis"
         android:usesCleartextTraffic="true">
-        <activity android:name=".card_servishp"></activity>
-        <activity android:name=".Model.Printer" />
-        <activity android:name=".Model.Laptop" />
-        <activity android:name=".HandPhone" />
+        <activity android:name=".card_servisprinter"></activity>
+        <activity android:name=".card_servislaptop" />
+        <activity android:name=".card_servishp" />
         <activity android:name=".Activity.Auth.LoginActivity" />
         <activity android:name=".Activity.Auth.RegisterActivity" />
         <activity android:name=".Activity.MainActivity">

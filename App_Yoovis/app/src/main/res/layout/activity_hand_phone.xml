@@ -13,7 +13,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:paddingTop="20dp"
-            tools:listitem="@layout/activity_card_servishp"
+            tools:listitem="@layout/row_item_kerusakan"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
 
     </RelativeLayout>
